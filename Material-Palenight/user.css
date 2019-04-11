@@ -1,5 +1,5 @@
 :root {
-	--bar-height: 120px;
+	--bar-height: 100px;
 }
 
 /*Round corner cover image*/
@@ -115,6 +115,12 @@
 	margin-top : 0px !important;
 }
 
+/* Toggle Cover Icon - Small */
+.view-player .now-playing .cover-image-link .toggle-cover-size {
+	top: -15px;
+	right: 15px;
+}
+
 /*
 Hide the song duration and elapsed text. I dont know where to put those so I just hide them
 */
@@ -228,7 +234,7 @@ Change text color in playlist
 .tl-cell:not(.tl-number),
 .tl-cell a:link,
 .tl-highlight {
-  color: var(--modspotify_secondary_fg);
+	color: var(--modspotify_secondary_fg);
 }
 
 .card-type-album .card-info-title,
@@ -365,8 +371,9 @@ body:not(.body-container--windows) .content-top-bar__profile-menu-button .dropdo
 /* Small tooltip */
 #tooltip {
 	border-radius: 5px !important;
-	border: 2px solid var(--modspotify_main_fg);
 	padding: 10px 10px;
+	color: #eeffff;
+	box-shadow: unset !important;
 }
 
 .tooltip-arrow-top, .tooltip-arrow-bottom {
@@ -478,6 +485,11 @@ span.glue-page-header__title-text {
 
 .view-player .now-playing .cover-image-link-wrapper {
 	flex: 0 1 calc(var(--bar-height) + 10px);
+}
+
+/* Fix cover positioning during transitions */
+.view-player .image-expanded .cover-image-link-wrapper {
+	display: none;
 }
 
 .text-container {
