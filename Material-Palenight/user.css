@@ -374,6 +374,7 @@ body:not(.body-container--windows) .content-top-bar__profile-menu-button .dropdo
 	padding: 10px 10px;
 	color: #eeffff;
 	box-shadow: unset !important;
+	border: solid 1px #7e56c2;
 }
 
 .tooltip-arrow-top, .tooltip-arrow-bottom {
@@ -519,9 +520,15 @@ span.glue-page-header__title-text {
 	margin : 0 !important;
 }
 
-.progress-container .inner {
+/* Slider(Progress bar, volume bar) colors */
+.progress-container .inner, .volumebar-container:hover .inner, #player-volumebar .active .inner {
 	border-radius: 0 2px 2px 0 !important;
-	background-color: #7E56C2 !important;
+	background-color: #e54b4b !important;
+}
+
+.progress-bar .handle {
+	background: #ff5370;
+	border-color: #ff5370;
 }
 
 .glue-page-header__p2s-details,
@@ -532,6 +539,7 @@ span.glue-page-header__title-text {
 /* User Menu */
 .Menu {
 	box-shadow: unset !important;
+	border: 1px solid #7e56c2;
 }
 
 /* Context menu (right click) */
@@ -539,6 +547,12 @@ span.glue-page-header__title-text {
 	border-radius: 7px !important;
 	overflow: hidden;
 	box-shadow: unset !important;
+	border: 1px solid #7e56c2;
+}
+
+/* Popover Arrow */
+.PopoverMenu__arrow {
+	display: none;
 }
 
 #menu-wrapper ::-webkit-scrollbar {
